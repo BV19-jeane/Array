@@ -6,7 +6,7 @@ void main()
  {
 	setlocale(LC_ALL, "");
 	const int n = 10;
-	int temp;
+	int temp, a;
 	int arr[n] = {0, 1 , 1, 2, 3, 5, 8, 13, 21, 34};
 
 // Выводим массив на экран
@@ -18,8 +18,9 @@ void main()
 		cout << endl;
 		cout << endl;
 //Смещаем элементы массива влево
-		cout << "Смещаем элементы массова влево: ";
-		for (int i = 0; i < n; i++)
+		cout << "Введите кол-во циклических сдвигов массива: ";  cin >> a;
+		cout << "Смещаем элементы массова влево " << a << " раз: " << endl;
+		for (int i = 0; i < a; i++)
 		{
 			temp = arr[0];
 
